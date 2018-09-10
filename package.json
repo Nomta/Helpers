@@ -1,0 +1,11 @@
+{
+  "name": "Helpers",
+  "version": "1.0.0",
+  "description": "helpers for working with DOM",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Nomta",
+  "license": "MIT"
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style>
+		body {background-color: gray; color: #eee; font-family: Helvetica, sans-serif;}
+		main {width: 50rem; max-width: 100%; margin: 5rem auto;}
+		section, h1, img, nav {margin: 2rem 0; text-align: center;}
+		img {display: inline-block; height: 25rem; border: 2px solid #eee;}
+		button {padding: 0.5rem 1.5rem; font-size: 1rem; color: gray;}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Lavanda Gallery</h1>
+		<section id="lavanda-1" data-index="1">
+			<img src="imgs/lavanda-1.jpg" alt="">
+			<h2>lavanda-1</h2>
+		</section>
+		<section id="lavanda-2" data-index="2" hidden>
+			<img src="imgs/lavanda-2.jpg" alt="">
+			<h2>lavanda-2</h2>
+		</section>
+		<section id="lavanda-3" data-index="3" hidden>
+			<img src="imgs/lavanda-3.jpg" alt="">
+			<h2>lavanda-3</h2>
+		</section>
+		<section id="lavanda-4" data-index="4" hidden>
+			<img src="imgs/lavanda-4.jpg" alt="">
+			<h2>lavanda-4</h2>
+		</section>
+		<nav>
+			<button id="prev">prev</button>
+			<button id="next">next</button>
+		</nav>
+	</main>
+	<script src="js/index.js"></script>
+</body>
+</html>
