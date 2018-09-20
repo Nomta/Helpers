@@ -21,7 +21,7 @@ It contains three modules:
 It looks for DOM elements, applying methods querySelector and querySelectorAll, only once, and then keeps them in the cache.
 
 #### Usage dom-cache
-```
+```js
 var dom = Helpers.dom;
 
 var elem  = dom.query(selector);	// corresponds to: var elem  = document.querySelector(selector);
@@ -32,26 +32,26 @@ var elems = dom.queryAll(selector);	// corresponds to: var elems = document.quer
 It helps to set up simple tab switching simulating page navigation.
 
 #### Usage link-handler
-```
+```js
 var linkHandler = Helpers.linkHandler,
     leafOver = linkHandler.leafOver;
 ```
 
 `leafOver` function accepts two parameters, both DOM elements or selectors.
 The first parameter is elements that need to be hidden, the second one is an element to be opened.
-```
+```js
 leafOver(elementsToHide, targetElement);
 ```
 *Tip: hide the elements using an attribute hidden before running the function.*  
   
 The second way:
-```
+```js
 var followLink = Helpers.followLink;
 ```
 
 `followLink` function is a wrapper for `leafOver`. It handles all links that have the `link` class. It only accepts one parameter, that is elements to hide. 
 The target element of the link attribute `href` is the element that will be opened.
-```
+```js
 // all sections will be hidden when clicking on any 'a.link' element inside the document.body,
 // except the target element of the link attribute `href`
 
@@ -60,7 +60,7 @@ document.body.onclick = function() {
 }
 ```
 `followLink` can accept callback as an optional second parameter. The callback can also accept an optional parameter, that is, the target element.
-```
+```js
 document.body.onclick = function() {
     followLink('section', function(target) {
         target.classList.add('opened');
@@ -78,7 +78,7 @@ It provides several functions for working with DOM elements:
 | delegate |  1. selector of target element (string) <br> 2. event  <br> 3. callback (can accept one or two optional parameters: target element, event) | delegates events |
 
 #### Usage dom-helpers
-```
+```js
 var helpers = Helpers.helpers;
 var section = helpers.createElement('section', {id: 'some-section', hidden: ''}, 'Lorem ipsum dolor sit amet...');
 document.body.appendChild(section);
