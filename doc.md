@@ -94,7 +94,7 @@ The `link-handler` module only depends on the other two.
 | --- | --- | --- | --- | --- |
 
 ### License
-This project is available under the [MIT](./license) license.  
+The project is available under the [MIT](./license) license.  
 
 
 
